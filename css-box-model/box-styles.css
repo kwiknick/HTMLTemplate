@@ -1,0 +1,49 @@
+
+* { /* This will reset the bullshit default styles.  Different browsers have different default styles. */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, p {
+    background-color: #DDE0E3; /* Light Grey */
+}
+
+h1 {
+    padding: 50px;
+    border-bottom: 1px solid #5D6063;
+}
+
+p {
+    padding: 20px 0px 20px 10px; /* Top  Right  Bottom  Left */
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+em, strong {
+    background-color: #B2D6FF; /* Light Blue */
+    display: inline; /* This is the default for em and strong elements */
+}
+
+strong {
+    margin: 50px;
+}
+
+div {
+    color: #FFF;
+    background-color: #5995DA;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5D6063;
+    border-radius: 5px;
+
+    width: 200px;
+    box-sizing: border-box;  /* This causes the content to be auto-sized as the max width is 200px */
+    margin: 20px auto;  /* This will center all the divs */
+}
+
+body {
+    text-align: center; /* This aligns all the text that is within the body tags */
+}
+
