@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>CSS Selectors</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <div class="page">
+            <h1>CSS Selectors</h1>
+
+            <!-- From the same page you just put the id of the element. Otherwise you'd preface it with the url. -->
+            <div><a href='#button-4'>Go to Button Two</a></div>
+            <div><a href="https://internetingishard.com/html-and-css/css-selectors/">CSS Selectors Tutorial</a></div>
+
+            <p class="synopsis">
+                CSS Selectors let you <em>select</em> individual HTML elements in an HTML 
+                document. This is <strong>super</strong> useful.
+            </p>
+
+            <p>
+                Classes are ridiculously important, since they allow you to select 
+                arbitrary boxes in your web pages.
+            </p>
+
+            <p>
+                We'll also be talking about links in this example, so here's
+                <!-- The below is an example of using link psuedo-classes on the anchor tag. -->
+                <a href="https://internetingishard.com">Interneting Is Hard</a> for us to 
+                style.
+            </p>
+
+            <!--<div class="button">Button One</div>
+            <div class="button call-to-action">Button Two</div>-->
+            <a class="button" href="nowhere.html">Button Three</a>
+            <a id="button-4" class="button call-to-action" href="nowhere.html">Button Four</a>
+
+        </div>
+
+        <!-- The below is an example of a child-selector -->
+        <div class="page">
+            <span>Span #1, this will be blue due to the child-selector.
+                <span>Span #2, this will be white it's a grandchild of div.</span>
+            </span>
+        </div>
+        <span>Span #3, this isn't in the div at all.</span>
+
+        
+
+
+    </body>

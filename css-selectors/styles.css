@@ -1,0 +1,109 @@
+
+.synopsis em {
+    color: #7E818E;  /* Light Grey */
+    font-style: italic;
+}
+
+.button:link,
+.button:visited {
+    display: block;
+    text-decoration: none;
+
+    color: #FFF;
+    background-color: #5995DA; /* Blue */
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5D6063; /* Dark Grey */
+    border-radius: 15px;
+
+    width: 200px;
+    margin: 20px auto;
+}
+
+.button:hover,
+.button:visited:hover {
+    color: #FFF;
+    background-color: #76AEED; /* Light Blue */
+}
+
+.button:active,
+.button:visited:active {
+    color: #FFF;
+    background-color: #5995DA; /* Blue */
+}
+
+#button-4 {
+    background-color: #D55C5F; /* Dark Red */
+}
+
+.call-to-action:link,
+.call-to-action:visited {
+    font-style: italic;
+    background-color: #EEB75A;  /* Yellow */
+}
+
+.call-to-action:hover,
+.call-to-action:visited:hover {
+    background-color: #F5CF8E; /* Light Yellow */
+}
+
+.call-to-action:active,
+.call-to-action:visited:active {
+    background-color: #EEB75A;  /* Yellow */
+}
+
+.page {
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* This is for child-selectors, which is different than descendent selectors */
+span {
+    background-color: white;
+}
+
+div > span {
+    background-color: dodgerblue;
+}
+
+/* This is for link psuedo-classes.  These are built into the browsers and are pretty sweet. */
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+/* The a:visited:hover breaks the below styling for visited sites, so I have to add another style below it. */
+a:active {
+    color: red;
+}
+
+a:visited:hover {
+    color: orange;
+}
+
+a:visited:active {
+    color: red;
+}
+
+/* This is the start of the structural psuedo-classes. */
+p:last-of-type {
+    margin-bottom: 50px;
+}
+
+/* This is the start of the Id Selectors 
+   Id selectors are generally frowned upon
+   due to the fact that they can only be 
+   used on one element. */
+#button-4 {
+    color: #5D6063; /* Dark Grey */
+}
