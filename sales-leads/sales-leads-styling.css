@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 1200px;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #5D6063;
+    background-color: lightgray;
+}
+
+a:link,
+a:visited {
+    color: #5D6063;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 50px;
+    background: white;
+    border-bottom: 5px solid #9ECD5B;
+    border-top: 5px solid #0993DB;
+}
+
+.menu {
+    margin-top: 15px;
+}
+
+.menu > li {
+    display: inline;
+    margin-right: 50px;
+}
+
+.menu > li:last-of-type {
+    margin-right: 0;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+}
+
+.field-grid {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* This causes the overflow to go to the next line. */
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+}
+
+.field-grid-item {
+    border: 1px solid #fff;
+    background-color: white;
+    width: 100%;
+    height: 300px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid #0993DB;
+    border-top: 5px solid #9ECD5B;
+}
+
+.footer-item {
+    border: 1px solid #fff;
+    height: 100px;
+    background-color: white;
+    width: 100%;
+    flex: 1; /* flex sets the amount that container grows - this is set to 1 */
+}
+
+.footer-one,
+.footer-three {
+    background-color: white;
+    flex: initial;
+    width: 100%;
+}
+
+.footer-sentence {
+    margin-top: 35px;
+}
+
+.footer-sentence > li {
+    display: inline;
+    margin-left: 50px;
+}
+
+button > span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto !important;
+}
