@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sales Leads!</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <script src="scripts/jquery-3.2.1.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <script src="scripts/sales-leads.js"></script>
+        <link rel="stylesheet" href="styles/sidebar.css">
+        <link rel="stylesheet" href="styles/mainpage.css">
+        <link rel="stylesheet" href="styles/modal.css">
+    </head>
+    <body>
+    <div id="wrapper" class="inactive">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul id="sidebar_menu" class="sidebar-nav">
+                <li class="sidebar-brand"><a id="menu-toggle" href="#">Menu<span id="main_icon" class="glyphicon glyphicon-indent-left"></span></a></li>
+            </ul>
+            <ul class="sidebar-nav" id="sidebar">
+                <li><a href="sales-leads.html">Home<span class="sub_icon glyphicon glyphicon-tag"/></a></li>
+                <li><a href="view-all.html">View All<span class="sub_icon glyphicon glyphicon-tag"/></a></li>
+                <li><a href="create-new.html">Create Lead<span class="sub_icon glyphicon glyphicon-user"/> </a> </li>
+                <li><a href="#" data-toggle="modal" data-target="#contactUsModal">Contact Us<span class="sub_icon glyphicon glyphicon-earphone"/> </a> </li>
+            </ul>
+        </div>
+
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+            <h2 id="FirstTable">First Table</h2>
+                <div class="panel panel-default panel-custom" style="border: 2px solid black">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Points</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Nick Willard</td>
+                            <td>88</td>
+                            <td>8,760</td>
+                        </tr>
+                        <tr>
+                            <td>Turd McGurd</td>
+                            <td>13</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Jill Cooling</td>
+                            <td>35</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>Nick Willard</td>
+                            <td>88</td>
+                            <td>8,760</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu toggle script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("active");
+            $(this).find('span').toggleClass('glyphicon-indent-right').toggleClass('glyphicon-indent-left');
+        });
+    </script>
+
+    <!-- Collapse toggle script -->
+    <script>
+        $('.chevron_toggleable').on('click', function() {
+            $(this).toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
+        });
+    </script>
+
+    <!--Modal Code-->
+    <div id="contactUsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Contact Us</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Clearent LLC</p>
+                    <p>www.clearent.com</p>
+                    <p>314-266-8418</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
