@@ -1,6 +1,5 @@
 modalBody, html{
     height: 100%;
-    background-color: #d3d3d3;
     font-family: 'Oxygen', sans-serif;
 }
 
@@ -61,4 +60,21 @@ input::-webkit-input-placeholder {
 .login-register{
     font-size: 11px;
     text-align: center;
+}
+
+.modal-header {
+    color: #96c93e;
+    background-color: #1999d6;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.modal-footer {
+    color: #1999d6;
+    background-color: #96c93e;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.button-color {
+    color: #96c93e;
+    background-color: #1999d6;
 }

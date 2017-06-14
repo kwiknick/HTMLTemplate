@@ -13,7 +13,7 @@
     margin-left: -200px;
     left: 70px;
     width: 200px;
-    background: #222;
+    background: #96c93e;
     position: fixed;
     height: 100%;
     z-index: 10000;
@@ -46,12 +46,12 @@
 }
 
 #sidebar_menu li a, .sidebar-nav li a {
-    color: #999;
+    color: #1A1A1A;
     display: block;
     float: left;
     text-decoration: none;
     width: 200px;
-    background: #252525;
+    background: #1999d6;
     border-top: 1px solid #373737;
     border-bottom: 1px solid #1A1A1A;
     -webkit-transition: background .5s;
@@ -72,14 +72,14 @@
 }
 
 .sidebar-nav li a {
-    color: #999999;
+    color: #1A1A1A;
     display: block;
     text-decoration: none;
 }
 
 .sidebar-nav li a:hover {
-    color: #fff;
-    background: rgba(255,255,255,0.2);
+    color: #96c93e;
+    background: #1999d6;
     text-decoration: none;
 }
 
@@ -95,7 +95,7 @@
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: #999999;
+    color: #1A1A1A;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {

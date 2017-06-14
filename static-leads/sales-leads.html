@@ -23,7 +23,6 @@
             </ul>
             <ul class="sidebar-nav" id="sidebar">
                 <li><a href="sales-leads.html">Home<span class="sub_icon glyphicon glyphicon-tag"/></a></li>
-                <li><a href="view-all.html">View All<span class="sub_icon glyphicon glyphicon-tag"/></a></li>
                 <li><a href="create-new.html">Create Lead<span class="sub_icon glyphicon glyphicon-user"/> </a> </li>
                 <li><a href="#" data-toggle="modal" data-target="#contactUsModal">Contact Us<span class="sub_icon glyphicon glyphicon-earphone"/> </a> </li>
             </ul>
@@ -31,59 +30,132 @@
 
         <div id="page-content-wrapper">
             <div class="container-fluid">
-            <h2 id="FirstTable">First Table</h2>
-                <div class="panel panel-default panel-custom" style="border: 2px solid black">
+                <h2 id="playingAround" align="center">Check Out All of my Sales Leads!!!</h2>
+                <div class="panel panel-default panel-custom" style="border: 2px solid #1999d6">
                     <table class="table table-striped">
                         <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Age</th>
-                            <th>Points</th>
-                        </tr>
+                            <tr>
+                                <th style="width: 1%">&nbsp;</th>
+                                <th>Merchant</th>
+                            </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>Nick Willard</td>
-                            <td>88</td>
-                            <td>8,760</td>
-                        </tr>
-                        <tr>
-                            <td>Turd McGurd</td>
-                            <td>13</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td>Jill Cooling</td>
-                            <td>35</td>
-                            <td>1000</td>
-                        </tr>
-                        <tr>
-                            <td>Nick Willard</td>
-                            <td>88</td>
-                            <td>8,760</td>
-                        </tr>
+
+                            <!-- Here is my First Table Row -->
+                            <tr data-toggle="collapse" data-target="#row1a">
+                                <td><span class="accordion-toggle chevron_toggleable glyphicon glyphicon-chevron-right" style="cursor: pointer;"></span></td>
+                                <td>Cooling Enterprises</td>
+                            </tr>
+
+                            <!-- Here is my First Hidden Table Row -->
+                            <tr>
+                                <td colspan="12" class="hiddenRow">
+                                    <div class="accordion-body collapse" id="row1a">
+                                        <table class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th>&nbsp;</th>
+                                                <th>DBA</th>
+                                                <th>MCC</th>
+                                                <th>Average Ticket</th>
+                                                <th>Annual Volume</th>
+                                                <td>&nbsp;</td>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>&nbsp;</td>
+                                                <td>Cooling Enterprises</td>
+                                                <td>5123</td>
+                                                <td>$20.00</td>
+                                                <td>$1000000.00</td>
+                                                <td>&nbsp;</td>
+                                            </tr>
+                                            </tbody>
+                                            <thead>
+                                            <tr>
+                                                <th>&nbsp;</th>
+                                                <th>Street1</th>
+                                                <th>Street2</th>
+                                                <th>City</th>
+                                                <th>State</th>
+                                                <th>Zip</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>&nbsp;</td>
+                                                <td>3819 Meremac St.</td>
+                                                <td></td>
+                                                <td>St. Louis</td>
+                                                <td>MO</td>
+                                                <td>63118</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Here is my Second Table Row -->
+                            <tr data-toggle="collapse" data-target="#row2a">
+                                <td><span class="accordion-toggle chevron_toggleable glyphicon glyphicon-chevron-right" style="cursor: pointer;"></span></td>
+                                <td>Docker Inc.</td>
+                            </tr>
+
+                            <!-- Here is my First Hidden Table Row -->
+                            <tr>
+                                <td colspan="12" class="hiddenRow">
+                                    <div class="accordion-body collapse" id="row2a">
+                                        <table class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th>&nbsp;</th>
+                                                <th>DBA</th>
+                                                <th>MCC</th>
+                                                <th>Average Ticket</th>
+                                                <th>Annual Volume</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>&nbsp;</td>
+                                                <td>Docker Inc.</td>
+                                                <td>5124</td>
+                                                <td>$4000.00</td>
+                                                <td>$50000000.00</td>
+                                            </tr>
+                                            </tbody>
+                                            <thead>
+                                            <tr>
+                                                <th>&nbsp;</th>
+                                                <th>Street1</th>
+                                                <th>Street2</th>
+                                                <th>City</th>
+                                                <th>State</th>
+                                                <th>Zip</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>&nbsp;</td>
+                                                <td>144 Townsend St.</td>
+                                                <td></td>
+                                                <td>San Francisco</td>
+                                                <td>CA</td>
+                                                <td>94107</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Menu toggle script -->
-    <!--<script>
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("active");
-            $(this).find('span').toggleClass('glyphicon-indent-right').toggleClass('glyphicon-indent-left');
-        });
-    </script>-->
-
-    <!-- Collapse toggle script -->
-    <!--<script>
-        $('.chevron_toggleable').on('click', function() {
-            $(this).toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
-        });
-    </script>-->
 
     <!--Modal Code-->
     <div id="contactUsModal" class="modal fade" role="dialog">
@@ -98,10 +170,10 @@
                 <div class="modal-body">
                     <p>Clearent LLC</p>
                     <p>www.clearent.com</p>
-                    <p>314-266-8418</p>
+                    <p>866.205.4721</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn button-color" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>

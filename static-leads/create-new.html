@@ -14,150 +14,190 @@
         <link rel="shortcut icon" href="images/tux-linux.ico">
     </head>
     <body>
-    <div id="wrapper" class="inactive">
+        <div id="wrapper" class="inactive">
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul id="sidebar_menu" class="sidebar-nav">
-                <li class="sidebar-brand"><a id="menu-toggle" href="#">Menu<span id="main_icon" class="glyphicon glyphicon-indent-left"></span></a></li>
-            </ul>
-            <ul class="sidebar-nav" id="sidebar">
-                <li><a href="sales-leads.html">Home<span class="sub_icon glyphicon glyphicon-tag"/></a></li>
-                <li><a href="view-all.html">View All<span class="sub_icon glyphicon glyphicon-tag"/></a></li>
-                <li><a href="create-new.html">Create Lead<span class="sub_icon glyphicon glyphicon-user"/> </a> </li>
-                <li><a href="#" data-toggle="modal" data-target="#contactUsModal">Contact Us<span class="sub_icon glyphicon glyphicon-earphone"/> </a> </li>
-            </ul>
-        </div>
-
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul id="sidebar_menu" class="sidebar-nav">
+                    <li class="sidebar-brand"><a id="menu-toggle" href="#">Menu<span id="main_icon" class="glyphicon glyphicon-indent-left"></span></a></li>
+                </ul>
+                <ul class="sidebar-nav" id="sidebar">
+                    <li><a href="sales-leads.html">Home<span class="sub_icon glyphicon glyphicon-tag"/></a></li>
+                    <li><a href="create-new.html">Create Lead<span class="sub_icon glyphicon glyphicon-user"/> </a> </li>
+                    <li><a href="#" data-toggle="modal" data-target="#contactUsModal">Contact Us<span class="sub_icon glyphicon glyphicon-earphone"/> </a> </li>
+                </ul>
             </div>
-        </div>
 
-    <!--Create New Sales Leads-->
-    <div id="createNewSalesLeads" role="dialog">
-        <div>
-            <div class="row main">
-                <div class="main-center">
-                    <form class="form-horizontal" method="post" action="#">
-                        <h1 class="title">Create A New SalesLead</h1>
-                        <div class="row">
-                        <div class="form-group">
-                            <label for="firstName" class="cols-md-2 control-label">First Name</label>
-                            <div class="cols-md-5">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="firstName" id="firstName"  placeholder="Enter Sales Leads FirstName"/>
-                                </div>
-                            </div>
-                            <label for="lastName" class="cols-md-2 control-label">Last Name</label>
-                            <div class="cols-md-5">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="lastName" id="lastName"  placeholder="Enter Sales Leads LastName"/>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                </div>
+            </div>
 
-                        <div class="form-group">
-                            <label for="email" class="cols-md-2 control-label">Your Email</label>
-                            <div class="cols-md-10">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="username" class="cols-md-2 control-label">Username</label>
-                            <div class="cols-md-10">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="password" class="cols-md-2 control-label">Password</label>
-                            <div class="cols-md-10">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                    <input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="confirm" class="cols-md-2 control-label">Confirm Password</label>
-                            <div class="cols-md-10">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                    <input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-xs-6 form-group">
-                                <label>Label1</label>
-                                <input class="form-control" type="text"/>
-                            </div>
-                            <div class="col-xs-6 form-group">
-                                <label>Label2</label>
-                                <input class="form-control" type="text"/>
-                            </div>
-                            <div class="col-xs-6">
+            <!--Create New Sales Leads-->
+            <div id="createNewSalesLeads" role="dialog">
+                <div>
+                    <div class="row main">
+                        <div class="main-center">
+                            <form class="form-horizontal" method="post" action="#">
+                                <h1 class="title">Create A New SalesLead!</h1>
                                 <div class="row">
-                                    <label class="col-xs-12">Label3</label>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6">
-                                        <input class="form-control" type="text"/>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6">
-                                        <input class="form-control" type="text"/>
+
+                                <div class="form-group">
+                                    <label for="name" class="cols-md-2 control-label">Name</label>
+                                    <div class="cols-md-5">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" name="name" id="name"  placeholder="Enter Sales Leads Name"/>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-xs-6 form-group">
-                                <label>Label4</label>
-                                <input class="form-control" type="text"/>
-                            </div>
-                        </div>
+                                </div>
 
-                        <div class="form-group ">
-                            <button type="button" class="btn btn-primary btn-lg btn-block login-button">Save</button>
+                                <div class="form-group">
+                                    <label for="dba" class="cols-md-2 control-label">DBA</label>
+                                    <div class="cols-md-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" name="dba" id="dba"  placeholder="Doing Business As?"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="mcc" class="cols-md-2 control-label">MCC</label>
+                                    <div class="cols-md-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                            <input type="number" class="form-control" name="mcc" id="mcc"  placeholder="Please Enter the MCC"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="annualTicket" class="cols-md-2 control-label">Average Ticket</label>
+                                    <div class="cols-md-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                            <input type="number" class="form-control" name="annualTicket" id="annualTicket"  placeholder="Enter your Average Ticket Amount"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="annualVolume" class="cols-md-2 control-label">Annual Volume</label>
+                                    <div class="cols-md-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                            <input type="number" class="form-control" name="annualVolume" id="annualVolume"  placeholder="Enter your Annual Volume"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Address Section -->          
+                                <div class="form-group">
+                                    <label for="streetOne" class="cols-md-2 control-label">Street1</label>
+                                    <div class="cols-md-5">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" name="streetOne" id="streetOne"  placeholder="Enter Address Street1"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="streetTwo" class="cols-md-2 control-label">Street2</label>
+                                    <div class="cols-md-5">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" name="streetTwo" id="streetTwo" placeholder="Enter Address Street2"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="city" class="cols-md-2 control-label">City</label>
+                                    <div class="cols-md-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" name="city" id="city"  placeholder="Please enter the City"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="state" class="cols-md-2 control-label">State</label>
+                                    <div class="cols-md-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" name="state" id="state"  placeholder="Enter the State"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="zip" class="cols-md-2 control-label">Zip</label>
+                                    <div class="cols-md-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                            <input type="number" class="form-control" name="zip" id="zip"  placeholder="Enter the Zip"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-6 form-group">
+                                    <label class="col-md-2 control-label">Label3</label>
+                                    <div class="col-xs-12 col-sm-6 ">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <input class="form-control" type="text"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="row">
+                                            <label class="col-xs-12">Label3</label>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6">
+                                                <input class="form-control" type="text"/>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6">
+                                                <input class="form-control" type="text"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6 form-group">
+                                        <label>Label4</label>
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                    <div class="col-xs-6 form-group">
+                                        <label>Label4</label>
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                </div>
+
+                                <!-- Don't worry about anything below this. -->
+                                <div class="form-group ">
+                                    <button type="button" class="btn btn-primary btn-lg btn-block login-button">Save</button>
+                                </div>
+                                <div class="login-register">
+                                    <a href="create-new.html">Cancel</a>
+                                </div>
+                            </form>
                         </div>
-                        <div class="login-register">
-                            <a href="create-new.html">Cancel</a>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
 
-    <!-- Menu toggle script -->
-    <!--<script>
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("active");
-            $(this).find('span').toggleClass('glyphicon-indent-right').toggleClass('glyphicon-indent-left');
-        });
-    </script>-->
-
-    <!-- Collapse toggle script -->
-    <!--<script>
-        $('.chevron_toggleable').on('click', function() {
-            $(this).toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
-        });
-    </script>-->
-
-    <!--Modal Code-->
+        <!--Modal Code-->
     <div id="contactUsModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
@@ -170,10 +210,10 @@
                 <div class="modal-body">
                     <p>Clearent LLC</p>
                     <p>www.clearent.com</p>
-                    <p>314-266-8418</p>
+                    <p>866.205.4721</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn button-color" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
