@@ -1,10 +1,13 @@
+$(document).ready(function() {
 
-var chevronToggle = $('.chevron_toggleable').on('click', function() {
+$('.chevron_toggleable').on('click', function() {
     $(this).toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
 });
 
-var menuToggle = $("#menu-toggle").click(function(e) {
+$("#menu-toggle").click(function(e) {
     e.preventDefault();
     $("#wrapper").toggleClass("active");
     $(this).find('span').toggleClass('glyphicon-indent-right').toggleClass('glyphicon-indent-left');
 });
+
+})
