@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ajax!</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <script src="scripts/jquery-3.2.1.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <script src="scripts/ajax.js"></script>
+    </head>
+    <body>
+
+        <div>
+            <div>
+                <img src="images/Einstein.jpg" alt="Einstein" style="width: 600px; height: 500px; margin: auto; display: block;">
+            </div>
+            <button id="request" style="margin: auto; display: block; margin-top: 15px;">Learn more about Einstein</button>
+            <div id="bio"></div>
+        </div>
+
+        <script>
+            var $btn = $('#request');
+            var $bio = $('#bio');
+            
+            $btn.on('click', function() {
+            $(this).hide();
+            $bio.load('Bio.txt', completeFunction);
+            });
+            
+            function completeFunction(responseText, textStatus, request) {
+                $bio.css('border', '1px solid #e8e8e8');
+                if(textStatus == 'error') {
+                    $bio.text('An error occurred during your request: ' +  request.status + ' ' + request.statusText);
+                } 
+            }
+        </script>
+    </body>
+</html>
